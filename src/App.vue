@@ -26,5 +26,7 @@ export default {
 }
 html {
   background-color: #2c3e50;
+  max-width: 400px;
+  margin: 0 auto;
 }
 </style>
