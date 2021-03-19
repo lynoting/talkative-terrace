@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # if you are deploying to https://<USERNAME>.github.io
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# if you are deploying to https://<USERNAME>.github.io/<REPO> key for ssh: sakiko
 git push -f git@github.com:lynoting/talkative-terrace.git master:gh-pages
 
 cd -

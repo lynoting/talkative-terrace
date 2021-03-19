@@ -1,17 +1,28 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <header class="layout-header">
+      <div>
+        <router-link class="layout-title" to="/" style="display: inline-block"
+          >s.kawano: writings & visuals</router-link
+        >
+      </div>
+      <div>
+        <router-link
+          class="layout-title"
+          to="/menu"
+          style="display: inline-block"
+          >=</router-link
+        >
+      </div>
+    </header>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
 export default {
   name: "App",
-  components: {
-    HelloWorld,
-  },
+  components: {},
 };
 </script>
 
@@ -21,11 +32,35 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ffffff;
-  margin-top: 60px;
+  color: #2c3e50;
+  margin-top: 0px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #2c3e50;
+  text-decoration: none;
+}
+.layout-header {
+  width: 100vw - calc(50% - 50vw);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  margin: 0 calc(50% - 50vw);
+  background-color: #f0f5fc;
+  display: flex;
+  justify-content: space-between;
+}
+.layout-header div {
+  display: inline-block;
+}
+.layout-header a {
+  margin-left: 2px;
+  margin-right: 2px;
 }
 html {
-  background-color: #2c3e50;
+  background-color: #f0f5fc;
   max-width: 400px;
   margin: 0 auto;
 }

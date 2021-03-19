@@ -2,7 +2,6 @@
   <div class="hello">
     <!-- <h1>{{ msg }}</h1> -->
     <h3 class="duration-demo">襟巻きに灰</h3>
-    <p class="duration-demo">underconstruction</p>
 
     <ul>
       <li>
@@ -96,7 +95,7 @@
 <script>
 import anime from "animejs/lib/anime.es.js";
 export default {
-  name: "HelloWorld",
+  name: "AshOnTheScarf",
   props: {
     msg: String,
   },
@@ -147,9 +146,6 @@ li {
   margin: 0 20px;
   padding-top: 50px;
   text-align: start;
-}
-a {
-  color: #42b983;
 }
 .square {
   width: 10px;
