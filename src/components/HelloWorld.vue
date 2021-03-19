@@ -146,7 +146,6 @@ li {
   /* display: inline-block; */
   margin: 0 20px;
   padding-top: 50px;
-  text-align: start;
 }
 a {
   color: #42b983;
