@@ -1,24 +1,5 @@
-# terrace
+# welcome to my terrace --
 
-## Project setup
-```
-npm install
-```
+please visit to 
+[lynoting.github.io/talkative-terrace/](https://lynoting.github.io/talkative-terrace/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
