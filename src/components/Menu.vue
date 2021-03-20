@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <header class="layout-header">
+    <header class="header">
       <div>
         <router-link to="/">s.kawano: writings & visuals</router-link>
       </div>
@@ -8,7 +8,8 @@
         <router-link to="/">×</router-link>
       </div>
     </header>
-    <div>
+    <div class="menu-content">
+      <h2>contact</h2>
       <ul>
         <li>
           <a href="https://twitter.com/kkhaiya">twitter</a>
@@ -62,28 +63,48 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-li {
-  list-style-type: none;
-  padding: 0;
+a:link,
+a:visited,
+a:hover,
+a:active,
+h2,
+h3 {
+  color: #ffffff;
+  text-decoration: none;
 }
+
 .menu {
   position: absolute;
   width: 100vw;
   height: 100vh;
   margin: 0 calc(50% - 50vw);
-  background-color: #f0f5fc;
+  background-color: #2c3e50;
   top: 0px;
   left: 0px;
 }
-.layout-header {
+.header {
   position: sticky;
   width: 100vw - calc(50% - 50vw);
   margin: 0 calc(50% - 50vw);
-  background-color: #f0f5fc;
+  background-color: #2c3e50;
   display: flex;
   justify-content: space-between;
 }
-.layout-header div {
+.header div {
   display: inline-block;
+}
+.header a {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.menu-content {
+}
+.menu-content ul {
+  padding: 0;
+}
+.menu-content li {
+  list-style-type: none;
+}
+.menu-content a {
 }
 </style>

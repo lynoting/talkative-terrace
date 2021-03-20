@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <header class="layout-header">
+    <header class="header">
       <div>
         <router-link class="layout-title" to="/" style="display: inline-block"
           >s.kawano: writings & visuals</router-link
@@ -35,6 +35,11 @@ export default {
   color: #2c3e50;
   margin-top: 0px;
 }
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
 a:link,
 a:visited,
 a:hover,
@@ -42,7 +47,7 @@ a:active {
   color: #2c3e50;
   text-decoration: none;
 }
-.layout-header {
+.header {
   width: 100vw - calc(50% - 50vw);
   padding: 0.5rem 1rem;
   position: sticky;
@@ -52,10 +57,10 @@ a:active {
   display: flex;
   justify-content: space-between;
 }
-.layout-header div {
+.header div {
   display: inline-block;
 }
-.layout-header a {
+.header a {
   margin-left: 2px;
   margin-right: 2px;
 }
